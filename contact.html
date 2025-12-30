@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Nexus Investment FX</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="380x380"
+      href="asset/nexus-iconn.png"
+    />
+    <link rel="stylesheet" href="/contact/contact.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script src="nav-active.js" defer></script>
+    <script src="/contact/contact.js" defer></script>
+  </head>
+  <body>
+    <!-- Ticker for crypto prices -->
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="tickerTrack">Loading crypto prices...</div>
+    </div>
+
+    <header>
+      <div class="logo-container">
+        <a href="index.html" rel="home">
+          <img
+            src="asset/nexus-logo.png"
+            alt="Nexus Investment FX Logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="auth-links auth-links-mobile">
+        <a href="login.html" target="_self" class="login" role="button"
+          >Login</a
+        >
+        <a href="register.html" target="_self" class="register" role="button"
+          >Register</a
+        >
+      </div>
+      <button
+        class="mobile-menu-toggle"
+        id="mobileMenuToggle"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-container" id="navContainer">
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="auth-links auth-links-desktop">
+          <a href="login.html" target="_self" class="login" role="button"
+            >Login</a
+          >
+          <a href="register.html" target="_self" class="register" role="button"
+            >Register</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="background-image-section">
+        <div class="bg-image-container">
+          <img
+            src="about/image/bg-nav.jpg"
+            class="background-image"
+            alt="Background Image"
+          />
+        </div>
+
+        <div class="header-text">
+          <h1>Contact us</h1>
+        </div>
+
+        <div class="header-text-links">
+          <a href="/index.html">Home</a>
+          <span class="double-arrow"></span>
+          <span class="current-link">Contact us</span>
+        </div>
+      </section>
+
+      <section class="c-contact-section">
+        <div class="c-contact-header">
+          <h2>Our Contact Details</h2>
+        </div>
+
+        <div class="c-contact-info">
+          <div class="c-contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Nexus Investment FX</strong></p>
+            <p>Towers Crescent Plaza, Tysons, Virginia 22102</p>
+            <p>
+              <a href="mailto:support@nexusinvestmentfx.com"
+                >support@nexusinvestmentfx.com</a
+              >
+            </p>
+            <p><a href="tel:+13155105843">+1 (315) 510-5843</a></p>
+            <p>24/7 Customer Support</p>
+
+            <div class="location-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.5927193364857!2d-77.22101!3d38.93111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7da79e0e0e0e1%3A0x0!2sTowers%20Crescent%20Plaza%2C%20Tysons%2C%20Virginia!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone"
+                  >Phone Number
+                  <span style="font-weight: 400">(Optional)</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+1 (315) 510-5843"
+                  pattern="^\+?[0-9\s\-]{7,15}$"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section footer-company">
+          <div class="footer-logo">
+            <img
+              src="asset/home/footer2-img.png"
+              alt="Nexus Investment FX Logo"
+            />
+          </div>
+          <p>
+            Your trusted partner in crypto investment and digital wealth growth.
+            Secure, transparent, and profitable trading solutions.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/company/nexus-investfx"
+              class="social-icon"
+              title="LinkedIn"
+              target="_blank"
+            >
+              <img src="asset/home/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="../index.html#investment-plans">Investment Plans</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Investment Info -->
+        <div class="footer-section footer-investment">
+          <h4>Investment Plans</h4>
+          <ul>
+            <li>
+              <a href="../index.html#investment-plans">Ultra Deluxe Plan</a>
+            </li>
+            <li><a href="../index.html#investment-plans">Premium Plan</a></li>
+            <li><a href="../index.html#investment-plans">Gold Plan</a></li>
+            <li><a href="../index.html#investment-plans">Ultimate Plan</a></li>
+            <li><a href="../index.html#investment-plans">Platinum Plan</a></li>
+            <li><a href="../index.html#investment-plans">VIP Plan</a></li>
+          </ul>
+        </div>
+
+        <!-- Support & Legal -->
+        <div class="footer-section footer-support">
+          <h4>Support & Legal</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Risk Disclosure</a></li>
+            <li><a href="#">Support Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section footer-contact">
+          <h4>Get In Touch</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <a href="mailto:support@nexusinvestmentfx.com"
+                >support@nexusinvestmentfx.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+13155105843">+1 (315) 510-5843</a>
+            </li>
+            <li class="contact-item">Towers Cres Plaza, Tysons, VA 22102</li>
+            <li class="contact-item">24/7 Customer Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>
+            &copy; 2026 Nexus Investment FX. All rights reserved. | Secure •
+            Transparent • Profitable
+          </p>
+          <div class="footer-badges">
+            <span class="badge">SSL Secured</span>
+            <span class="badge">Licensed</span>
+            <span class="badge">Verified</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
