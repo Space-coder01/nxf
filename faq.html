@@ -1,0 +1,3725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Frequently Asked Questions | Nexus Investment FX</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="380x380"
+      href="asset/nexus-iconn.png"
+    />
+    <link rel="stylesheet" href="faq/faq.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script src="nav-active.js" defer></script>
+    <script src="faq/faq.js" defer></script>
+  </head>
+  <body>
+    <!-- Ticker for crypto prices -->
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="tickerTrack">Loading crypto prices...</div>
+    </div>
+
+    <header>
+      <div class="logo-container">
+        <a href="https://nexusinvestmentfx.com" rel="home">
+          <img
+            src="asset/nexus-logo.png"
+            alt="Nexus Investment FX Logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="auth-links auth-links-mobile">
+        <a
+          href="https://nexusinvestmentfx.com/login.html"
+          target="_self"
+          class="login"
+          role="button"
+          >Login</a
+        >
+        <a
+          href="https://nexusinvestmentfx.com/signup.html"
+          target="_self"
+          class="register"
+          role="button"
+          >Register</a
+        >
+      </div>
+      <button
+        class="mobile-menu-toggle"
+        id="mobileMenuToggle"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-container" id="navContainer">
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="https://nexusinvestmentfx.com">Home</a></li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/about.html">About Us</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/services.html">Services</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="auth-links auth-links-desktop">
+          <a
+            href="https://nexusinvestmentfx.com/login.html"
+            target="_self"
+            class="login"
+            role="button"
+            >Login</a
+          >
+
+          <a
+            href="https://nexusinvestmentfx.com/signup.html"
+            target="_self"
+            class="register"
+            role="button"
+            >Register</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section with Background -->
+      <section class="background-image-section">
+        <div class="bg-image-container">
+          <img
+            src="about/image/bg-nav.jpg"
+            class="background-image"
+            alt="FAQ Background"
+          />
+        </div>
+
+        <div class="header-text">
+          <h1>Frequently Asked Questions</h1>
+        </div>
+
+        <div class="header-text-links">
+          <p>
+            Find answers to common questions about Nexus Investment FX
+          </p>
+        </div>
+      </section>
+
+      <!-- Search Bar Section -->
+      <section class="faq-search-section">
+        <div class="faq-search-container">
+          <h2>How can we help you today?</h2>
+          <div class="search-box">
+            <svg
+              class="search-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              />
+            </svg>
+            <input
+              type="text"
+              id="faqSearch"
+              placeholder="Search for answers..."
+              aria-label="Search FAQ"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Categories Navigation -->
+      <section class="faq-categories-nav">
+        <div class="categories-container">
+          <button class="category-btn active" data-category="all">
+            All Questions
+          </button>
+          <button class="category-btn" data-category="getting-started">
+            Getting Started
+          </button>
+          <button class="category-btn" data-category="accounts">
+            Accounts & Security
+          </button>
+          <button class="category-btn" data-category="investments">
+            Investments
+          </button>
+          <button class="category-btn" data-category="deposits">
+            Deposits & Withdrawals
+          </button>
+          <button class="category-btn" data-category="fees">
+            Fees & Charges
+          </button>
+          <button class="category-btn" data-category="security">
+            Security & Privacy
+          </button>
+          <button class="category-btn" data-category="technical">
+            Technical Support
+          </button>
+          <button class="category-btn" data-category="platform">
+            Platform Features
+          </button>
+        </div>
+      </section>
+
+      <!-- FAQ Content Section -->
+      <section class="faq-content-section">
+        <div class="faq-content-container">
+          <!-- Getting Started Category -->
+          <div class="faq-category" data-category="getting-started">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+              Getting Started
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is Nexus Investment FX?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nexus Investment FX is a leading cryptocurrency investment
+                  platform that provides secure and profitable investment
+                  opportunities in the digital asset market. We offer various
+                  investment plans designed to help you grow your wealth through
+                  strategic cryptocurrency trading and portfolio management.
+                </p>
+                <p>
+                  Our platform combines cutting-edge technology with expert
+                  market analysis to deliver consistent returns to our investors
+                  while maintaining the highest standards of security and
+                  transparency.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I create an account?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Creating an account is simple and takes just a few minutes:
+                </p>
+                <ol>
+                  <li>
+                    Click the "Sign Up" button in the top right corner of our
+                    homepage
+                  </li>
+                  <li>
+                    Fill in your personal information (name, email, phone
+                    number)
+                  </li>
+                  <li>
+                    Create a strong password and enable two-factor
+                    authentication
+                  </li>
+                  <li>
+                    Verify your email address through the confirmation link
+                  </li>
+                  <li>
+                    Once verified, you can log in and start exploring investment
+                    plans
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do I need any experience to invest?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No prior investment experience is required! Nexus Investment
+                  FX is designed for both beginners and experienced investors.
+                  Our platform offers:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Guided Investment Plans:</strong> Pre-configured
+                    plans with clear terms and expected returns
+                  </li>
+                  <li>
+                    <strong>Educational Resources:</strong> Tutorials, market
+                    analysis, and investment guides
+                  </li>
+                  <li>
+                    <strong>24/7 Customer Support:</strong> Our team is always
+                    available to help you
+                  </li>
+                  <li>
+                    <strong>Dashboard Analytics:</strong> Easy-to-understand
+                    performance metrics and reports
+                  </li>
+                </ul>
+                <p>
+                  We handle the complex trading strategies, so you can focus on
+                  growing your wealth.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is the minimum investment amount?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our minimum investment amount varies by plan to accommodate
+                  different investment goals:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Ultra Deluxe Plan:</strong> $3,500 - $9,999 (Perfect
+                    for quick returns, 5-days duration)
+                  </li>
+                  <li>
+                    <strong>Premium Plan:</strong> $10,000 - $19,999 (Great for
+                    medium-term investments, 7-days duration)
+                  </li>
+                  <li>
+                    <strong>Gold Plan:</strong> $20,000 - $49,999 (Best value
+                    for serious investors, 14-days duration)
+                  </li>
+                  <li>
+                    <strong>Ultimate Plan:</strong> $50,000 - $74,999 (Premium
+                    investment opportunity, 21-days duration)
+                  </li>
+                  <li>
+                    <strong>Platinum Plan:</strong> $75,000 - $99,999 (Exclusive
+                    high-return plan, 30-days duration)
+                  </li>
+                  <li>
+                    <strong>VIP Plan:</strong> $100,000 - $999,999 (Ultimate
+                    investment experience, 60-days duration)
+                  </li>
+                </ul>
+                <p>
+                  We recommend starting with an amount that aligns with your
+                  financial goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Does Nexus Investment FX have a mobile app?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our mobile application is currently under development and is
+                  not yet available to the public.
+                </p>
+                <ul>
+                  <li>
+                    <strong>In Development:</strong> Dedicated mobile apps for
+                    iOS and Android are actively being built
+                  </li>
+                  <li>
+                    <strong>Future Release:</strong> The mobile app will provide
+                    full access to investments, deposits, withdrawals, and
+                    account management
+                  </li>
+                  <li>
+                    <strong>Security First:</strong> The app will include
+                    advanced security features such as biometric authentication
+                  </li>
+                  <li>
+                    <strong>Real-Time Updates:</strong> Users will receive
+                    instant notifications for transactions and account activity
+                  </li>
+                  <li>
+                    <strong>Mobile Web Access:</strong> In the meantime, our
+                    website is fully optimized for mobile browsers
+                  </li>
+                </ul>
+                <p>
+                  We appreciate your patience and will announce the official
+                  release once the mobile applications are ready.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I open a demo account to test the platform?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Currently, Nexus Investment FX focuses on providing real
+                  cryptocurrency investment services and does not offer demo
+                  accounts. However, we provide several resources to help you
+                  get started:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Educational Resources:</strong> Comprehensive guides
+                    and tutorials in our Learning Center
+                  </li>
+                  <li>
+                    <strong>Investment Simulators:</strong> Interactive tools to
+                    calculate potential returns
+                  </li>
+                  <li>
+                    <strong>Low Minimum Investment:</strong> Start with as
+                    little as $3,500 to test our platform
+                  </li>
+                  <li>
+                    <strong>Platform Walkthrough:</strong> Guided tours
+                    available after account creation
+                  </li>
+                  <li>
+                    <strong>24/7 Support:</strong> Our team is always available
+                    to answer questions
+                  </li>
+                </ul>
+                <p>
+                  We understand the importance of hands-on experience. While we
+                  do not offer demo accounts, our platform is designed to be
+                  user-friendly and intuitive, allowing users to navigate and
+                  engage with confidence from the start.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What educational resources do you provide?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nexus Investment FX offers extensive educational resources to
+                  help you succeed:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Learning Center:</strong> Comprehensive articles
+                    covering cryptocurrency basics, investment strategies, and
+                    market analysis
+                  </li>
+                  <li>
+                    <strong>Video Tutorials:</strong> Step-by-step guides on
+                    using the platform and understanding investment concepts
+                  </li>
+                  <li>
+                    <strong>Market Analysis:</strong> Daily market insights and
+                    cryptocurrency news updates
+                  </li>
+                  <li>
+                    <strong>Webinars:</strong> Regular live sessions with
+                    investment experts and Q&A opportunities
+                  </li>
+                  <li>
+                    <strong>Investment Guides:</strong> Downloadable PDFs
+                    covering risk management, portfolio diversification, and
+                    more
+                  </li>
+                  <li>
+                    <strong>Glossary:</strong> Complete cryptocurrency and
+                    investment terminology reference
+                  </li>
+                  <li>
+                    <strong>Blog:</strong> Regular articles on industry trends,
+                    platform updates, and success stories
+                  </li>
+                </ul>
+                <p>
+                  All educational resources are free and accessible to
+                  registered users. We believe informed investors make better
+                  decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accounts & Security Category -->
+          <div class="faq-category" data-category="accounts">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+                />
+              </svg>
+              Accounts & Security
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What documents do I need for KYC verification?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  To comply with international regulations and ensure platform
+                  security, we require the following documents for verification:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Government-Issued ID:</strong> Passport, driver's
+                    license, or national ID card
+                  </li>
+                  <li>
+                    <strong>Proof of Address:</strong> Utility bill, bank
+                    statement, or rental agreement (not older than 3 months)
+                  </li>
+                  <li>
+                    <strong>Selfie Photo:</strong> A clear photo of yourself
+                    holding your ID next to your face
+                  </li>
+                </ul>
+                <p>
+                  All documents must be clear, legible, and show your full name
+                  and address. The verification process typically takes 24-48
+                  hours.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How secure is my account?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Security is our top priority. We implement multiple layers of
+                  protection:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Two-Factor Authentication (2FA):</strong> Required
+                    for all sensitive operations
+                  </li>
+                  <li>
+                    <strong>End-to-End Encryption:</strong> All data is
+                    encrypted using AES-256 encryption
+                  </li>
+                  <li>
+                    <strong>Cold Storage:</strong> 95% of user funds are stored
+                    offline in secure vaults
+                  </li>
+                  <li>
+                    <strong>DDoS Protection:</strong> Enterprise-grade
+                    protection against attacks
+                  </li>
+                  <li>
+                    <strong>24/7 Monitoring:</strong> Our security team monitors
+                    for suspicious activity around the clock
+                  </li>
+                  <li>
+                    <strong>Regular Audits:</strong> Third-party security audits
+                    and penetration testing
+                  </li>
+                </ul>
+                <p>
+                  We also recommend enabling all available security features and
+                  using a strong, unique password.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I have multiple accounts?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No, according to our Terms of Service, each user is allowed
+                  only one account. Creating multiple accounts is strictly
+                  prohibited and may result in:
+                </p>
+                <ul>
+                  <li>Immediate suspension of all associated accounts</li>
+                  <li>Forfeiture of funds and earnings</li>
+                  <li>Permanent ban from the platform</li>
+                </ul>
+                <p>
+                  This policy helps us maintain platform integrity, prevent
+                  fraud, and comply with anti-money laundering (AML)
+                  regulations. If you need to update your account information or
+                  have special circumstances, please contact our support team.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I reset my password?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>If you've forgotten your password, follow these steps:</p>
+                <ol>
+                  <li>Go to the login page and click "Forgot Password?"</li>
+                  <li>Enter your registered email address</li>
+                  <li>
+                    Check your email for a password reset link (may take 5-10
+                    minutes)
+                  </li>
+                  <li>Click the link and create a new strong password</li>
+                  <li>
+                    Log in with your new password and verify via 2FA if enabled
+                  </li>
+                </ol>
+                <p>
+                  If you don't receive the reset email, check your spam folder
+                  or contact support for assistance. For security reasons, reset
+                  links expire after 1 hour.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I enable Two-Factor Authentication (2FA)?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Two-Factor Authentication adds an extra layer of security to
+                  your account. To enable it:
+                </p>
+                <ol>
+                  <li>Log in to your account and go to Settings</li>
+                  <li>Navigate to the Security section</li>
+                  <li>Click "Enable Two-Factor Authentication"</li>
+                  <li>
+                    Download an authenticator app (Google Authenticator, Authy,
+                    etc.)
+                  </li>
+                  <li>Scan the QR code with your authenticator app</li>
+                  <li>Enter the 6-digit code from your app to verify setup</li>
+                  <li>Save your backup codes in a secure location</li>
+                </ol>
+                <p>
+                  Once enabled, you'll need to enter a code from your
+                  authenticator app every time you log in or perform sensitive
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I change my registered email address?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, you can update your registered email address through your
+                  account settings:
+                </p>
+                <ol>
+                  <li>Log in to your Nexus Investment FX account</li>
+                  <li>
+                    Navigate to "Account Settings" > "Profile Information"
+                  </li>
+                  <li>Click on "Change Email Address"</li>
+                  <li>Enter your new email address</li>
+                  <li>Verify your identity via 2FA or security questions</li>
+                  <li>
+                    Confirm the change via verification email sent to both old
+                    and new addresses
+                  </li>
+                </ol>
+                <p>
+                  <strong>Important:</strong> For security reasons, email
+                  changes require verification and have a 48-hour security hold
+                  period. During this time, withdrawals and certain account
+                  changes will be temporarily restricted. If you don't initiate
+                  this change, contact our support team immediately.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What happens if I lose access to my 2FA device?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If you lose access to your two-factor authentication device:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Use Backup Codes:</strong> During 2FA setup, you
+                    received backup codes. Use one of these to log in
+                  </li>
+                  <li>
+                    <strong>Account Recovery:</strong> If you don't have backup
+                    codes, initiate account recovery from the login page
+                  </li>
+                  <li>
+                    <strong>Identity Verification:</strong> You'll need to
+                    verify your identity by providing:
+                    <ul>
+                      <li>Government-issued ID</li>
+                      <li>
+                        Selfie holding your ID and a note with current date
+                      </li>
+                      <li>Answers to security questions</li>
+                      <li>Recent account activity verification</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Processing Time:</strong> Account recovery typically
+                    takes 24-72 hours for security review
+                  </li>
+                  <li>
+                    <strong>Reset 2FA:</strong> Once verified, you can set up
+                    2FA with a new device
+                  </li>
+                </ol>
+                <p>
+                  <strong>Prevention Tip:</strong> Always save your backup codes
+                  in a secure location when setting up 2FA. We also recommend
+                  having 2FA configured on multiple devices if possible.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I temporarily deactivate my account?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Nexus Investment FX offers temporary account deactivation
+                  for users who need a break:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Cooling-Off Period:</strong> Deactivate your account
+                    for 30, 60, or 90 days
+                  </li>
+                  <li>
+                    <strong>Your Investments:</strong> Active investments
+                    continue to earn returns during deactivation
+                  </li>
+                  <li>
+                    <strong>Account Access:</strong> You won't be able to log in
+                    during the deactivation period
+                  </li>
+                  <li>
+                    <strong>Automatic Reactivation:</strong> Your account
+                    automatically reactivates after the chosen period
+                  </li>
+                  <li>
+                    <strong>Early Reactivation:</strong> Contact support to
+                    reactivate early with identity verification
+                  </li>
+                </ul>
+                <p>
+                  To request temporary deactivation, go to Account Settings >
+                  Security > Temporary Deactivation, or contact our support
+                  team. Note: You must withdraw all available funds or have
+                  active investments before deactivation.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I permanently close my account?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We're sorry to see you go! To permanently close your account:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Withdraw All Funds:</strong> Complete all pending
+                    investments and withdraw your entire balance
+                  </li>
+                  <li>
+                    <strong>Cancel Subscriptions:</strong> Ensure no recurring
+                    investments or subscriptions are active
+                  </li>
+                  <li>
+                    <strong>Contact Support:</strong> Email
+                    support@nexusinvestmentfx.com with "Account Closure Request"
+                    in the subject line
+                  </li>
+                  <li>
+                    <strong>Verify Identity:</strong> Complete identity
+                    verification for security purposes
+                  </li>
+                  <li>
+                    <strong>Confirm Closure:</strong> Respond to our
+                    confirmation email to finalize closure
+                  </li>
+                </ol>
+                <p>
+                  <strong>What Happens:</strong>
+                </p>
+                <ul>
+                  <li>
+                    Your account will be permanently closed within 5-7 business
+                    days
+                  </li>
+                  <li>
+                    Personal data will be handled according to our
+                    <a href="privacy-policy.html">Privacy Policy</a> and data
+                    retention requirements
+                  </li>
+                  <li>
+                    Transaction history may be retained for legal and regulatory
+                    compliance (typically 7 years)
+                  </li>
+                  <li>
+                    Account closure is irreversible - you'll need to create a
+                    new account to use our services again
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Investments Category -->
+          <div class="faq-category" data-category="investments">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
+                />
+              </svg>
+              Investments
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do your investment plans work?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our investment plans are designed to provide predictable
+                  returns over a fixed period:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Choose a Plan:</strong> Select an investment plan
+                    that matches your budget and goals
+                  </li>
+                  <li>
+                    <strong>Make a Deposit:</strong> Fund your investment using
+                    supported cryptocurrencies
+                  </li>
+                  <li>
+                    <strong>Earn Daily Returns:</strong> Your investment
+                    generates daily profits based on the plan's rate
+                  </li>
+                  <li>
+                    <strong>Track Performance:</strong> Monitor your earnings in
+                    real-time through your dashboard
+                  </li>
+                  <li>
+                    <strong>Receive Payouts:</strong> Withdraw your principal
+                    and profits at the end of the investment term
+                  </li>
+                </ul>
+                <p>
+                  Our expert trading team manages your investments across
+                  various cryptocurrency markets to maximize returns while
+                  minimizing risk.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What returns can I expect?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Returns vary by investment plan and market conditions. Here
+                  are our typical return rates:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Ultra Deluxe Plan:</strong> 35% daily returns for 5
+                    days
+                  </li>
+                  <li>
+                    <strong>Premium Plan:</strong> 45% daily returns for 7 days
+                  </li>
+                  <li>
+                    <strong>Gold Plan:</strong> 50% daily returns for 14 days
+                  </li>
+                  <li>
+                    <strong>Ultimate Plan:</strong> 75% daily returns for 21
+                    days
+                  </li>
+                  <li>
+                    <strong>Platinum Plan:</strong> 85% daily returns for 30
+                    days
+                  </li>
+                  <li>
+                    <strong>VIP Plan:</strong> 90% daily returns for 60 days
+                  </li>
+                </ul>
+                <p>
+                  <strong>Important:</strong> Our investment strategies are
+                  actively managed by experienced professional traders with
+                  extensive market experience. When market conditions move
+                  outside expected risk thresholds, protective measures are
+                  applied, including strategic position adjustments or exits, to
+                  help preserve capital. While we prioritize disciplined risk
+                  management and downside protection, all investments involve
+                  risk, and returns may vary based on market conditions. Please
+                  review our Risk Disclosure for full details.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I withdraw my investment before it matures?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  All investment plans on Nexus Investment FX have fixed
+                  durations and must be completed before withdrawals can be
+                  made:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Locked Investment Period:</strong> Funds invested
+                    are locked for the full duration of the selected plan
+                  </li>
+                  <li>
+                    <strong>No Early Withdrawal:</strong> Withdrawals are not
+                    permitted until the investment term has fully matured
+                  </li>
+                  <li>
+                    <strong>Earnings Availability:</strong> Profits become
+                    available for withdrawal only after the investment duration
+                    is completed
+                  </li>
+                </ul>
+                <p>
+                  This structure helps ensure stable investment performance and
+                  effective risk management. Please select your investment plan
+                  carefully before confirming.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I have multiple active investments?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! You can have multiple active investments simultaneously.
+                  This allows you to:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Diversify:</strong> Spread your investments across
+                    different plans and durations
+                  </li>
+                  <li>
+                    <strong>Stagger Maturities:</strong> Have investments
+                    maturing at different times for regular cash flow
+                  </li>
+                  <li>
+                    <strong>Scale Gradually:</strong> Start small and increase
+                    your investments as you see results
+                  </li>
+                  <li>
+                    <strong>Maximize Returns:</strong> Take advantage of
+                    different return rates across plans
+                  </li>
+                </ul>
+                <p>
+                  There's no limit to the number of active investments you can
+                  have. Many successful investors maintain 3-5 simultaneous
+                  investments for optimal portfolio diversification.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What happens when my investment matures?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  When your investment reaches maturity, you have several
+                  options:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Withdraw Everything:</strong> Request withdrawal of
+                    your principal and all accumulated profits
+                  </li>
+                  <li>
+                    <strong>Reinvest:</strong> Automatically roll over your
+                    funds into a new investment plan
+                  </li>
+                  <li>
+                    <strong>Partial Withdrawal:</strong> Withdraw profits and
+                    reinvest the principal
+                  </li>
+                  <li>
+                    <strong>Leave in Account:</strong> Keep funds in your
+                    account balance for future investments
+                  </li>
+                </ol>
+                <p>
+                  You'll receive an email notification 24 hours before maturity.
+                  If no action is taken, funds will remain in your account
+                  balance until you decide what to do with them.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I reinvest my profits automatically?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX offers automatic profit reinvestment
+                  to help compound your returns:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Auto-Reinvest Feature:</strong> Enable automatic
+                    reinvestment in your account settings
+                  </li>
+                  <li>
+                    <strong>Same Plan Renewal:</strong> Automatically reinvest
+                    profits into the same investment plan
+                  </li>
+                  <li>
+                    <strong>Compound Growth:</strong> Benefit from compound
+                    interest by continuously reinvesting
+                  </li>
+                  <li>
+                    <strong>Flexible Settings:</strong> Choose to reinvest 25%,
+                    50%, 75%, or 100% of profits
+                  </li>
+                  <li>
+                    <strong>Partial Withdrawal:</strong> Even with auto-reinvest
+                    enabled, you can withdraw portions of profits
+                  </li>
+                  <li>
+                    <strong>Disable Anytime:</strong> Turn off auto-reinvest at
+                    any time without penalties
+                  </li>
+                </ul>
+                <p>
+                  To enable auto-reinvest, go to your Investment Dashboard >
+                  Select Investment Plan > Enable Auto-Reinvest. This feature is
+                  popular among long-term investors looking to maximize returns.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What are the tax implications of my investments?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Tax regulations vary by jurisdiction, and users are
+                  responsible for their own tax compliance:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Tax Reporting:</strong> Nexus Investment FX provides
+                    detailed transaction history and annual statements
+                  </li>
+                  <li>
+                    <strong>Downloadable Reports:</strong> Export your
+                    investment activity in CSV or PDF format for tax purposes
+                  </li>
+                  <li>
+                    <strong>Capital Gains:</strong> Cryptocurrency profits may
+                    be subject to capital gains tax in many jurisdictions
+                  </li>
+                  <li>
+                    <strong>Record Keeping:</strong> We maintain comprehensive
+                    records of all your transactions
+                  </li>
+                  <li>
+                    <strong>Annual Statements:</strong> Receive yearly summaries
+                    of your investment activity
+                  </li>
+                </ul>
+                <p>
+                  <strong>Important:</strong> Nexus Investment FX does not
+                  provide tax advice. We strongly recommend consulting with a
+                  qualified tax professional or accountant familiar with
+                  cryptocurrency taxation in your country. Tax laws regarding
+                  cryptocurrency investments are complex and vary significantly
+                  by jurisdiction.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How does market volatility affect my investments?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nexus Investment FX employs sophisticated risk management
+                  strategies to protect your investments:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Fixed Returns:</strong> Your investment plans offer
+                    predetermined returns regardless of short-term market
+                    fluctuations
+                  </li>
+                  <li>
+                    <strong>Diversified Portfolio:</strong> We diversify across
+                    multiple cryptocurrencies and trading strategies
+                  </li>
+                  <li>
+                    <strong>Risk Hedging:</strong> Professional traders use
+                    hedging techniques to minimize volatility impact
+                  </li>
+                  <li>
+                    <strong>Market Analysis:</strong> Real-time monitoring and
+                    algorithmic trading to capitalize on opportunities
+                  </li>
+                  <li>
+                    <strong>Reserve Fund:</strong> We maintain reserve funds to
+                    ensure consistent returns during market downturns
+                  </li>
+                </ul>
+                <p>
+                  However, cryptocurrency markets are inherently volatile. While
+                  we implement protective measures, extreme market conditions
+                  can impact overall platform performance.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I track my investment performance in real-time?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX provides comprehensive real-time
+                  investment tracking:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Live Dashboard:</strong> View all your active
+                    investments and current balances in real-time.
+                  </li>
+                  <li>
+                    <strong>Performance Metrics:</strong> Track ROI, total
+                    earnings, and investment progress.
+                  </li>
+                  <li>
+                    <strong>Detailed Analytics:</strong> Access charts and
+                    graphs showing your investment history.
+                  </li>
+                  <li>
+                    <strong>Daily Updates:</strong> Receive daily profit updates
+                    via email or push notifications.
+                  </li>
+                  <li>
+                    <strong>Mobile Access:</strong> Monitor investments
+                    on-the-go with our mobile browser.
+                  </li>
+                  <li>
+                    <strong>Transaction History:</strong> Complete record of all
+                    deposits, withdrawals, and earnings.
+                  </li>
+                  <li>
+                    <strong>Export Reports:</strong> Download detailed
+                    investment reports for your records.
+                  </li>
+                </ul>
+                <p>
+                  Your investment dashboard is accessible 24/7 and updates
+                  automatically. You can also set up custom alerts for
+                  investment milestones, maturity dates, and balance thresholds.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What happens if I don't withdraw at maturity?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  When your investment reaches maturity, you have several
+                  options:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Grace Period:</strong> You have 30 days after
+                    maturity to decide what to do with your funds
+                  </li>
+                  <li>
+                    <strong>Account Balance:</strong> If no action is taken,
+                    funds (principal + profits) are transferred to your
+                    available account balance
+                  </li>
+                  <li>
+                    <strong>No Interest Loss:</strong> You don't lose any earned
+                    interest if you don't withdraw immediately
+                  </li>
+                  <li>
+                    <strong>Flexible Withdrawal:</strong> Withdraw partial or
+                    full amounts at your convenience
+                  </li>
+                  <li>
+                    <strong>Reinvestment Options:</strong> Easily reinvest in a
+                    new plan directly from your dashboard
+                  </li>
+                  <li>
+                    <strong>Notifications:</strong> We send reminders 7 days and
+                    1 day before maturity
+                  </li>
+                </ul>
+                <p>
+                  There are no penalties for not withdrawing immediately at
+                  maturity. Your funds remain secure in your account and can be
+                  accessed or reinvested whenever you choose.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deposits & Withdrawals Category -->
+          <div class="faq-category" data-category="deposits">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                />
+              </svg>
+              Deposits & Withdrawals
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What cryptocurrencies do you accept?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept a wide range of popular cryptocurrencies for
+                  deposits and withdrawals:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Bitcoin (BTC)</strong> - The original cryptocurrency
+                  </li>
+                  <li>
+                    <strong>Ethereum (ETH)</strong> - Smart contract platform
+                  </li>
+                  <li>
+                    <strong>Tether (USDT)</strong> - Stable coin pegged to USD
+                  </li>
+                  <li>
+                    <strong>USD Coin (USDC)</strong> - Another stable coin
+                    option
+                  </li>
+                  <li>
+                    <strong>Litecoin (LTC)</strong> - Fast transaction times
+                  </li>
+                  <li><strong>Ripple (XRP)</strong> - Cross-border payments</li>
+                  <li><strong>Bitcoin Cash (BCH)</strong> - Bitcoin fork</li>
+                </ul>
+                <p>
+                  We regularly add support for new cryptocurrencies based on
+                  demand and market trends. Check your account dashboard for the
+                  most current list of supported assets.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How long do deposits take to process?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Deposit processing times vary by cryptocurrency due to
+                  blockchain confirmation requirements:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Bitcoin (BTC):</strong> 30-60 minutes (3
+                    confirmations required)
+                  </li>
+                  <li>
+                    <strong>Ethereum (ETH):</strong> 10-20 minutes (12
+                    confirmations)
+                  </li>
+                  <li>
+                    <strong>USDT/USDC:</strong> 10-30 minutes depending on
+                    network (ERC-20, TRC-20, etc.)
+                  </li>
+                  <li>
+                    <strong>Litecoin (LTC):</strong> 10-15 minutes (6
+                    confirmations)
+                  </li>
+                  <li>
+                    <strong>Ripple (XRP):</strong> 5-10 minutes (instant on most
+                    networks)
+                  </li>
+                </ul>
+                <p>
+                  During high network congestion, processing times may be
+                  longer. You can track your deposit status in real-time through
+                  your account dashboard.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I make a deposit?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Making a deposit is straightforward:</p>
+                <ol>
+                  <li>Log in to your Nexus Investment FX account</li>
+                  <li>Navigate to the "Deposit" section in your dashboard</li>
+                  <li>Select the cryptocurrency you want to deposit</li>
+                  <li>Copy the unique deposit address or scan the QR code</li>
+                  <li>
+                    Send the exact amount from your external wallet to this
+                    address
+                  </li>
+                  <li>
+                    Wait for blockchain confirmations (you can track progress in
+                    your dashboard)
+                  </li>
+                  <li>
+                    Once confirmed, funds will be credited to your account
+                    balance
+                  </li>
+                </ol>
+                <p>
+                  <strong>Important:</strong> Always double-check the deposit
+                  address before sending funds. Cryptocurrency transactions are
+                  irreversible, and sending to the wrong address will result in
+                  permanent loss of funds.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I withdraw my funds?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>To withdraw funds from your account:</p>
+                <ol>
+                  <li>Log in and go to the "Withdraw" section</li>
+                  <li>Select the cryptocurrency you want to withdraw</li>
+                  <li>Enter your external wallet address</li>
+                  <li>Specify the withdrawal amount</li>
+                  <li>Review transaction details and fees</li>
+                  <li>Confirm withdrawal via 2FA authentication</li>
+                  <li>
+                    Your request will be processed within 24-48 hours on
+                    business days
+                  </li>
+                </ol>
+                <p>
+                  All withdrawal requests undergo security verification to
+                  protect your funds. You'll receive email notifications at each
+                  stage of the process. Minimum withdrawal amounts apply (varies
+                  by cryptocurrency).
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Are there withdrawal limits?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, withdrawal limits are in place for security and
+                  compliance reasons:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Basic Verification:</strong> Up to $5,000 per day /
+                    $50,000 per month
+                  </li>
+                  <li>
+                    <strong>Enhanced Verification:</strong> Up to $25,000 per
+                    day / $250,000 per month
+                  </li>
+                  <li>
+                    <strong>VIP Status:</strong> Up to $100,000 per day /
+                    $1,000,000 per month
+                  </li>
+                </ul>
+                <p>
+                  To increase your withdrawal limits, complete enhanced
+                  verification by providing additional documentation. For
+                  institutional or high-net-worth investors requiring higher
+                  limits, please contact our VIP support team.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Why is my withdrawal pending?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Withdrawals may be pending for several reasons:</p>
+                <ul>
+                  <li>
+                    <strong>Security Review:</strong> Large withdrawals undergo
+                    manual verification (24-48 hours)
+                  </li>
+                  <li>
+                    <strong>KYC Compliance:</strong> Additional identity
+                    verification may be required
+                  </li>
+                  <li>
+                    <strong>Weekend/Holiday:</strong> Processing only occurs on
+                    business days
+                  </li>
+                  <li>
+                    <strong>Insufficient Verification:</strong> Your account
+                    verification level may need upgrading
+                  </li>
+                  <li>
+                    <strong>System Maintenance:</strong> Scheduled maintenance
+                    periods (announced in advance)
+                  </li>
+                </ul>
+                <p>
+                  If your withdrawal has been pending for more than 48 hours,
+                  please contact our support team with your transaction ID for
+                  assistance.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I deposit using a bank transfer or credit card?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Currently, Nexus Investment FX exclusively accepts
+                  cryptocurrency deposits:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Cryptocurrency Only:</strong> We accept Bitcoin
+                    (BTC), Ethereum (ETH), Tether (USDT), USD Coin (USDC),
+                    Litecoin (LTC), and Ripple (XRP)
+                  </li>
+                  <li>
+                    <strong>No Fiat Currency:</strong> Bank transfers, credit
+                    cards, and debit cards are not currently supported
+                  </li>
+                  <li>
+                    <strong>Why Crypto Only:</strong> This ensures faster
+                    transactions, lower fees, enhanced privacy, and global
+                    accessibility
+                  </li>
+                  <li>
+                    <strong>Getting Cryptocurrency:</strong> If you don't have
+                    crypto, you can purchase it from major exchanges like
+                    Coinbase, Binance, Kraken, or Crypto.com
+                  </li>
+                  <li>
+                    <strong>Future Plans:</strong> We're exploring fiat on-ramp
+                    solutions for future integration
+                  </li>
+                </ul>
+                <p>
+                  To get started, purchase cryptocurrency from a reputable
+                  exchange, then transfer it to your Nexus Investment FX deposit
+                  address. Our support team can guide you through this process
+                  if needed.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >What should I do if I sent funds to the wrong address?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Unfortunately, cryptocurrency transactions are irreversible by
+                  design:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Irreversible Transactions:</strong> Once confirmed
+                    on the blockchain, transactions cannot be reversed or
+                    canceled
+                  </li>
+                  <li>
+                    <strong>Wrong Nexus Address:</strong> If you sent funds to a
+                    different user's Nexus deposit address, contact support
+                    immediately. We may be able to coordinate a return with the
+                    recipient
+                  </li>
+                  <li>
+                    <strong>External Address:</strong> If you sent funds to a
+                    completely external address, we cannot retrieve them
+                  </li>
+                  <li>
+                    <strong>Wrong Network:</strong> Funds sent on the wrong
+                    network (e.g., ERC-20 vs BEP-20) may be recoverable with
+                    support assistance
+                  </li>
+                </ul>
+                <p>
+                  <strong>Prevention Tips:</strong>
+                </p>
+                <ol>
+                  <li>
+                    Always double-check the deposit address before sending
+                  </li>
+                  <li>
+                    Use the copy button or QR code provided by our platform
+                  </li>
+                  <li>
+                    Start with a small test transaction for first-time deposits
+                  </li>
+                  <li>
+                    Verify you're using the correct cryptocurrency network
+                  </li>
+                  <li>
+                    Save deposit addresses as contacts in your wallet after
+                    verification
+                  </li>
+                </ol>
+                <p>
+                  If you've made an error, contact support@nexusinvestmentfx.com
+                  immediately with your transaction details. While we cannot
+                  guarantee recovery, our team will do everything possible to
+                  assist you.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I cancel a pending withdrawal?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, you can cancel withdrawal requests that haven't been
+                  processed yet:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Pending Status:</strong> Withdrawals remain
+                    cancellable while in "Pending" or "Under Review" status
+                  </li>
+                  <li>
+                    <strong>How to Cancel:</strong> Go to Dashboard >
+                    Transactions > Find your withdrawal > Click "Cancel
+                    Withdrawal"
+                  </li>
+                  <li>
+                    <strong>Immediate Cancellation:</strong> Funds are
+                    immediately returned to your available balance
+                  </li>
+                  <li>
+                    <strong>Processing Status:</strong> Once withdrawal status
+                    changes to "Processing" or "Completed," cancellation is no
+                    longer possible
+                  </li>
+                  <li>
+                    <strong>Typical Processing:</strong> Most withdrawals begin
+                    processing within 12-24 hours of submission
+                  </li>
+                </ul>
+                <p>
+                  If you need to cancel a withdrawal that's already in
+                  processing status, contact our support team immediately. In
+                  some rare cases, we may be able to halt the transaction before
+                  it's broadcast to the blockchain.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you charge fees for internal transfers?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No! Internal transfers between Nexus Investment FX users are
+                  completely free:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Zero Fees:</strong> No charges for transfers to
+                    other Nexus users
+                  </li>
+                  <li>
+                    <strong>Instant Transfer:</strong> Funds arrive immediately
+                    in the recipient's account
+                  </li>
+                  <li>
+                    <strong>All Cryptocurrencies:</strong> Free internal
+                    transfers for all supported cryptocurrencies
+                  </li>
+                  <li>
+                    <strong>How to Transfer:</strong> Dashboard > Transfer >
+                    Enter recipient's Nexus username or email > Amount > Confirm
+                  </li>
+                </ul>
+                <p>Internal transfers are perfect for:</p>
+                <ul>
+                  <li>Gifting investments to friends or family</li>
+                  <li>Moving funds between your multiple accounts</li>
+                  <li>Paying for services within the Nexus community</li>
+                  <li>Avoiding external blockchain fees</li>
+                </ul>
+                <p>
+                  <strong>Note:</strong> External withdrawals to non-Nexus
+                  wallets are subject to standard network fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What is the minimum and maximum withdrawal amount?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Withdrawal limits vary by cryptocurrency to ensure
+                  cost-effective transactions:
+                </p>
+                <h4>Minimum Withdrawals:</h4>
+                <ul>
+                  <li><strong>Bitcoin (BTC):</strong> 0.01 BTC (~$1,000)</li>
+                  <li><strong>Ethereum (ETH):</strong> 0.32 ETH (~$1,000)</li>
+                  <li><strong>Tether (USDT):</strong> $1,000</li>
+                  <li><strong>USD Coin (USDC):</strong> $1,000</li>
+                  <li><strong>Litecoin (LTC):</strong> 12.24 LTC (~$1,000)</li>
+                </ul>
+                <h4>Maximum Withdrawals:</h4>
+                <ul>
+                  <li>
+                    <strong>Unverified Accounts:</strong> $5,000 per
+                    transaction, $10,000 per day
+                  </li>
+                  <li>
+                    <strong>Basic Verification:</strong> $25,000 per
+                    transaction, $50,000 per day
+                  </li>
+                  <li>
+                    <strong>Full Verification:</strong> $100,000 per
+                    transaction, $500,000 per day
+                  </li>
+                  <li>
+                    <strong>VIP Status:</strong> Custom limits available
+                    (contact support)
+                  </li>
+                </ul>
+                <p>
+                  Minimum amounts ensure withdrawal fees don't consume a
+                  disproportionate percentage of your transaction. Higher limits
+                  require additional KYC verification for security and
+                  regulatory compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fees & Charges Category -->
+          <div class="faq-category" data-category="fees">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                />
+              </svg>
+              Fees & Charges
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What fees does Nexus Investment FX charge?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our fee structure is transparent and designed to align our
+                  success with yours:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Deposit Fees:</strong> FREE - We don't charge
+                    deposit fees
+                  </li>
+                  <li>
+                    <strong>Withdrawal Fees:</strong> Varies by cryptocurrency
+                    (covers blockchain network fees)
+                  </li>
+                  <li>
+                    <strong>Management Fees:</strong> Already included in
+                    investment plan returns
+                  </li>
+                  <li>
+                    <strong>Performance Commission:</strong> A 10% commission is
+                    applied only to profits generated after the investment cycle
+                    is completed
+                  </li>
+                  <li>
+                    <strong>Account Maintenance:</strong> FREE - No monthly or
+                    annual fees
+                  </li>
+                </ul>
+                <p>
+                  The performance commission is charged only after profits have
+                  been successfully generated. All applicable fees are clearly
+                  displayed before you confirm any transaction.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How much are withdrawal fees?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Withdrawal fees vary by cryptocurrency and cover blockchain
+                  network costs:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Bitcoin (BTC):</strong> 0.0005 BTC (~$20-30
+                    depending on price)
+                  </li>
+                  <li>
+                    <strong>Ethereum (ETH):</strong> 0.005 ETH (~$8-15 depending
+                    on price)
+                  </li>
+                  <li>
+                    <strong>USDT (TRC-20):</strong> 1 USDT (recommended for low
+                    fees)
+                  </li>
+                  <li>
+                    <strong>USDT (ERC-20):</strong> 10 USDT (higher due to gas
+                    fees)
+                  </li>
+                  <li><strong>Litecoin (LTC):</strong> 0.001 LTC (~$0.50-2)</li>
+                </ul>
+                <p>
+                  Fees are subject to change based on network conditions. We
+                  recommend using TRC-20 USDT for the lowest withdrawal fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Are there any account maintenance fees?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No, Nexus Investment FX does not charge monthly or annual
+                  account maintenance fees:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Free Account:</strong> No cost to open or maintain
+                    your account
+                  </li>
+                  <li>
+                    <strong>No Inactivity Fees:</strong> Your account remains
+                    free even if unused for extended periods
+                  </li>
+                  <li>
+                    <strong>No Minimum Balance:</strong> No requirements to keep
+                    a minimum balance to avoid fees
+                  </li>
+                  <li>
+                    <strong>Free Platform Access:</strong> All platform features
+                    available without subscription costs
+                  </li>
+                  <li>
+                    <strong>No Hidden Charges:</strong> We only charge
+                    transparent withdrawal fees and optional premium services
+                  </li>
+                </ul>
+                <p>
+                  Our fee structure is designed to be simple and transparent.
+                  You only pay network fees for withdrawals - no surprises, no
+                  recurring charges.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Do you offer fee discounts for high-volume investors?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX offers a tiered VIP program with
+                  reduced fees and exclusive benefits:
+                </p>
+                <h4>VIP Tier Structure:</h4>
+                <ul>
+                  <li>
+                    <strong>Bronze VIP:</strong> $50,000+ total investment
+                    <ul>
+                      <li>10% reduction on all withdrawal fees</li>
+                      <li>Priority customer support</li>
+                      <li>Access to exclusive investment opportunities</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Silver VIP:</strong> $100,000+ total investment
+                    <ul>
+                      <li>25% reduction on all withdrawal fees</li>
+                      <li>Dedicated account manager</li>
+                      <li>Early access to new investment plans</li>
+                      <li>Monthly market analysis reports</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Gold VIP:</strong> $250,000+ total investment
+                    <ul>
+                      <li>50% reduction on all withdrawal fees</li>
+                      <li>Personal investment advisor</li>
+                      <li>Custom investment strategies</li>
+                      <li>VIP-only webinars and events</li>
+                      <li>Higher withdrawal limits</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Platinum VIP:</strong> $500,000+ total investment
+                    <ul>
+                      <li>Zero withdrawal fees</li>
+                      <li>Premium concierge service</li>
+                      <li>Institutional-grade investment options</li>
+                      <li>Direct line to executive team</li>
+                      <li>Unlimited withdrawal limits</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>
+                  VIP status is automatically granted based on your total
+                  investment amount across all active plans. Contact our VIP
+                  services team at vip@nexusinvestmentfx.com to learn more.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How are withdrawal fees calculated?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Withdrawal fees are calculated based on blockchain network
+                  costs plus a small service fee:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Network Fees:</strong> The actual cost to process
+                    transactions on the blockchain (varies by network
+                    congestion)
+                  </li>
+                  <li>
+                    <strong>Service Fee:</strong> A flat 0.5% processing fee to
+                    cover operational costs
+                  </li>
+                  <li>
+                    <strong>Dynamic Pricing:</strong> Fees adjust based on
+                    real-time network conditions
+                  </li>
+                  <li>
+                    <strong>Fee Preview:</strong> Exact fee displayed before you
+                    confirm any withdrawal
+                  </li>
+                  <li>
+                    <strong>No Hidden Costs:</strong> The amount shown is the
+                    final amount - no surprises
+                  </li>
+                </ul>
+                <h4>Example Calculation:</h4>
+                <p>Withdrawing 1 ETH when network fee is 0.003 ETH:</p>
+                <ul>
+                  <li>Withdrawal amount: 1 ETH</li>
+                  <li>Network fee: 0.003 ETH</li>
+                  <li>Service fee (0.5%): 0.005 ETH</li>
+                  <li>Total fee: 0.008 ETH</li>
+                  <li><strong>You receive: 0.992 ETH</strong></li>
+                </ul>
+                <p>
+                  During high network congestion, we recommend waiting for lower
+                  fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Are there fees for converting between cryptocurrencies?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Nexus Investment FX offers cryptocurrency conversion with
+                  competitive rates:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Conversion Fee:</strong> 1% on all cryptocurrency
+                    exchanges
+                  </li>
+                  <li>
+                    <strong>Real-Time Rates:</strong> Conversions use live
+                    market rates at the time of exchange
+                  </li>
+                  <li>
+                    <strong>All Pairs Available:</strong> Convert between any of
+                    our supported cryptocurrencies
+                  </li>
+                  <li>
+                    <strong>Instant Conversion:</strong> Exchanges complete
+                    within seconds
+                  </li>
+                  <li>
+                    <strong>No Minimum/Maximum:</strong> Convert any amount from
+                    your available balance
+                  </li>
+                  <li>
+                    <strong>VIP Discounts:</strong> Reduced conversion fees for
+                    VIP members (0.75% Bronze, 0.5% Silver, 0.25% Gold, 0%
+                    Platinum)
+                  </li>
+                </ul>
+                <p>
+                  <strong>How to Convert:</strong> Go to Dashboard > Exchange >
+                  Select cryptocurrencies > Enter amount > Review rate and fees
+                  > Confirm exchange
+                </p>
+                <p>This feature is useful when you want to:</p>
+                <ul>
+                  <li>
+                    Take advantage of different investment plans requiring
+                    specific cryptocurrencies
+                  </li>
+                  <li>Rebalance your portfolio across different assets</li>
+                  <li>
+                    Prepare for withdrawals in your preferred cryptocurrency
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security & Privacy Category -->
+          <div class="faq-category" data-category="security">
+            <h2 class="category-title">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                />
+              </svg>
+              Security & Privacy
+            </h2>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How is my personal information protected?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We take data protection seriously and implement multiple
+                  security measures:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Encryption:</strong> All data encrypted with AES-256
+                    encryption at rest and TLS 1.3 in transit
+                  </li>
+                  <li>
+                    <strong>Secure Servers:</strong> Data stored in SOC 2
+                    compliant data centers with 24/7 monitoring
+                  </li>
+                  <li>
+                    <strong>Access Controls:</strong> Strict role-based access
+                    limits employee data access
+                  </li>
+                  <li>
+                    <strong>Regular Audits:</strong> Third-party security audits
+                    and compliance reviews
+                  </li>
+                  <li>
+                    <strong>Privacy Compliance:</strong> Full GDPR and CCPA
+                    compliance
+                  </li>
+                </ul>
+                <p>
+                  We never sell your personal information to third parties. For
+                  complete details, please review our
+                  <a href="privacy-policy.html">Privacy Policy</a>.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What should I do if I suspect unauthorized access?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If you suspect unauthorized access to your account, take
+                  immediate action:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Change Password:</strong> Reset your password
+                    immediately
+                  </li>
+                  <li>
+                    <strong>Enable 2FA:</strong> If not already enabled,
+                    activate two-factor authentication
+                  </li>
+                  <li>
+                    <strong>Review Activity:</strong> Check your transaction
+                    history for suspicious activity
+                  </li>
+                  <li>
+                    <strong>Contact Support:</strong> Email
+                    security@nexusinvestmentfx.com immediately
+                  </li>
+                  <li>
+                    <strong>Freeze Account:</strong> Request temporary account
+                    freeze to prevent unauthorized transactions
+                  </li>
+                  <li>
+                    <strong>Scan Devices:</strong> Run antivirus scans on all
+                    devices you use to access your account
+                  </li>
+                </ol>
+                <p>
+                  Our security team is available 24/7 to assist with account
+                  security issues. Quick action can prevent unauthorized access
+                  and protect your funds.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you store my cryptocurrency?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, we securely store user cryptocurrencies using
+                  industry-leading practices:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Cold Storage:</strong> 95% of user funds stored
+                    offline in secure, geographically distributed vaults
+                  </li>
+                  <li>
+                    <strong>Hot Wallets:</strong> Only 5% kept in hot wallets
+                    for immediate withdrawals
+                  </li>
+                  <li>
+                    <strong>Multi-Signature:</strong> All cold storage wallets
+                    require multiple signatures for access
+                  </li>
+                  <li>
+                    <strong>Insurance:</strong> User funds protected by
+                    comprehensive insurance coverage
+                  </li>
+                  <li>
+                    <strong>Regular Audits:</strong> Quarterly proof-of-reserves
+                    audits by independent firms
+                  </li>
+                </ul>
+                <p>
+                  Our storage infrastructure is designed to withstand various
+                  security threats while ensuring funds remain accessible for
+                  legitimate withdrawals.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is Nexus Investment FX regulated?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Nexus Investment FX operates in compliance with
+                  international financial regulations:
+                </p>
+                <ul>
+                  <li>
+                    <strong>KYC/AML Compliance:</strong> Full Know Your Customer
+                    and Anti-Money Laundering procedures
+                  </li>
+                  <li>
+                    <strong>Data Protection:</strong> GDPR and CCPA compliant
+                    data handling
+                  </li>
+                  <li>
+                    <strong>Financial Standards:</strong> Adherence to
+                    international cryptocurrency trading standards
+                  </li>
+                  <li>
+                    <strong>Regular Reporting:</strong> Compliance reporting to
+                    relevant authorities
+                  </li>
+                  <li>
+                    <strong>Third-Party Audits:</strong> Regular security and
+                    financial audits
+                  </li>
+                </ul>
+                <p>
+                  We maintain the highest standards of regulatory compliance to
+                  ensure a safe and trustworthy platform for all users.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >What security certifications does Nexus Investment FX
+                  have?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nexus Investment FX maintains industry-leading security
+                  certifications and compliance:
+                </p>
+                <ul>
+                  <li>
+                    <strong>SOC 2 Type II:</strong> Independently audited for
+                    security, availability, and confidentiality
+                  </li>
+                  <li>
+                    <strong>ISO 27001:</strong> International standard for
+                    information security management
+                  </li>
+                  <li>
+                    <strong>PCI DSS Compliant:</strong> Payment Card Industry
+                    Data Security Standard compliance
+                  </li>
+                  <li>
+                    <strong>GDPR Compliant:</strong> Full compliance with
+                    European data protection regulations
+                  </li>
+                  <li>
+                    <strong>CCPA Compliant:</strong> California Consumer Privacy
+                    Act compliance
+                  </li>
+                  <li>
+                    <strong>Penetration Testing:</strong> Quarterly third-party
+                    security assessments
+                  </li>
+                  <li>
+                    <strong>Bug Bounty Program:</strong> Active security
+                    researcher community identifying vulnerabilities
+                  </li>
+                </ul>
+                <p>
+                  Our security certifications are regularly renewed and audited.
+                  We publish annual transparency reports detailing our security
+                  measures and incident response activities.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >How do you prevent phishing attacks targeting users?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Nexus Investment FX implements multiple measures to protect
+                  users from phishing:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Official Domains:</strong> Only communicate via
+                    nexusinvestmentfx.com - bookmark this URL
+                  </li>
+                  <li>
+                    <strong>SSL Certificate:</strong> Always look for the
+                    padlock icon in your browser
+                  </li>
+                  <li>
+                    <strong>Email Authentication:</strong> All official emails
+                    come from @nexusinvestmentfx.com with digital signatures
+                  </li>
+                  <li>
+                    <strong>Anti-Phishing Code:</strong> Set a unique
+                    anti-phishing code in your account settings that appears in
+                    all official emails
+                  </li>
+                  <li>
+                    <strong>No Password Requests:</strong> We will NEVER ask for
+                    your password via email, phone, or chat
+                  </li>
+                  <li>
+                    <strong>Withdrawal Confirmations:</strong> All withdrawal
+                    requests require email and 2FA confirmation
+                  </li>
+                  <li>
+                    <strong>Security Alerts:</strong> Immediate notifications
+                    for login attempts, password changes, and withdrawal
+                    requests
+                  </li>
+                  <li>
+                    <strong>User Education:</strong> Regular security tips and
+                    phishing awareness campaigns
+                  </li>
+                </ul>
+                <p>
+                  <strong>Red Flags to Watch For:</strong>
+                </p>
+                <ul>
+                  <li>Emails asking for passwords or 2FA codes</li>
+                  <li>Urgent requests to verify account or claim rewards</li>
+                  <li>Links to domains other than nexusinvestmentfx.com</li>
+                  <li>Unsolicited phone calls claiming to be from support</li>
+                </ul>
+                <p>
+                  If you receive suspicious communications claiming to be from
+                  Nexus Investment FX, forward them to
+                  security@nexusinvestmentfx.com immediately.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Can I whitelist withdrawal addresses for extra
+                  security?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Address whitelisting is a powerful security feature
+                  available to all users:
+                </p>
+                <ul>
+                  <li>
+                    <strong>How It Works:</strong> Only pre-approved wallet
+                    addresses can receive withdrawals from your account
+                  </li>
+                  <li>
+                    <strong>Enable Whitelisting:</strong> Account Settings >
+                    Security > Withdrawal Address Management > Enable Whitelist
+                  </li>
+                  <li>
+                    <strong>Adding Addresses:</strong> Each new address requires
+                    48-hour security hold and email/2FA confirmation
+                  </li>
+                  <li>
+                    <strong>Multiple Addresses:</strong> Add up to 10
+                    whitelisted addresses per cryptocurrency
+                  </li>
+                  <li>
+                    <strong>Address Nicknames:</strong> Label addresses for easy
+                    identification (e.g., "Personal Wallet," "Hardware Wallet")
+                  </li>
+                  <li>
+                    <strong>Removal Process:</strong> Removing addresses
+                    requires 7-day cooling-off period
+                  </li>
+                </ul>
+                <p>
+                  <strong>Benefits:</strong>
+                </p>
+                <ul>
+                  <li>
+                    Prevents unauthorized withdrawals even if account is
+                    compromised
+                  </li>
+                  <li>Reduces risk of typos or clipboard malware attacks</li>
+                  <li>Provides peace of mind for large-balance accounts</li>
+                  <li>Recommended for all users, especially VIP members</li>
+                </ul>
+                <p>
+                  <strong>Note:</strong> Enabling whitelisting means you cannot
+                  withdraw to new addresses without the 48-hour waiting period.
+                  This is a security feature, not a limitation.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What happens to my data if I close my account?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  When you close your account, we follow a transparent data
+                  handling process:
+                </p>
+                <h4>Immediately Upon Closure:</h4>
+                <ul>
+                  <li>
+                    Your account is deactivated and login access is removed
+                  </li>
+                  <li>Personal information is flagged for deletion</li>
+                  <li>Marketing communications are stopped immediately</li>
+                  <li>Your profile becomes inaccessible to other users</li>
+                </ul>
+                <h4>Data Retention Periods:</h4>
+                <ul>
+                  <li>
+                    <strong>Transaction Records:</strong> Retained for 7 years
+                    (legal/regulatory requirement)
+                  </li>
+                  <li>
+                    <strong>KYC Documents:</strong> Retained for 5 years (AML
+                    compliance)
+                  </li>
+                  <li>
+                    <strong>Personal Information:</strong> Deleted after 90 days
+                    (except where legally required)
+                  </li>
+                  <li>
+                    <strong>Communication History:</strong> Deleted after 1 year
+                  </li>
+                  <li><strong>IP Logs:</strong> Deleted after 6 months</li>
+                </ul>
+                <h4>What Gets Deleted:</h4>
+                <ul>
+                  <li>Name, email, phone number (after retention period)</li>
+                  <li>Profile pictures and personal preferences</li>
+                  <li>Saved addresses and payment preferences</li>
+                  <li>Dashboard settings and customizations</li>
+                </ul>
+                <h4>What We Retain (Legal Requirements):</h4>
+                <ul>
+                  <li>Transaction history and financial records</li>
+                  <li>KYC/AML verification documents</li>
+                  <li>Records necessary for tax reporting and audits</li>
+                  <li>Evidence of regulatory compliance</li>
+                </ul>
+                <p>
+                  You have the right to request a copy of all data we hold about
+                  you before closing your account. Contact
+                  privacy@nexusinvestmentfx.com to exercise your data rights
+                  under GDPR or CCPA.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you have insurance for user funds?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX maintains comprehensive insurance
+                  coverage for user funds:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Cold Storage Insurance:</strong> $100 million
+                    coverage for assets in cold storage through leading
+                    insurance providers
+                  </li>
+                  <li>
+                    <strong>Hot Wallet Insurance:</strong> Full coverage for the
+                    5% of funds kept in hot wallets
+                  </li>
+                  <li>
+                    <strong>Cyber Insurance:</strong> Protection against
+                    hacking, data breaches, and cyber attacks
+                  </li>
+                  <li>
+                    <strong>Crime Insurance:</strong> Coverage for employee
+                    theft, fraud, and other criminal activities
+                  </li>
+                  <li>
+                    <strong>What's Covered:</strong>
+                    <ul>
+                      <li>Security breaches of our infrastructure</li>
+                      <li>Unauthorized access to cold storage</li>
+                      <li>Internal fraud or misconduct</li>
+                      <li>Physical theft of hardware wallets</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>What's NOT Covered:</strong>
+                    <ul>
+                      <li>
+                        User account compromises (weak passwords, phishing
+                        victims)
+                      </li>
+                      <li>Voluntary transfers or transactions</li>
+                      <li>Market volatility or investment losses</li>
+                      <li>Third-party exchange failures</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>
+                  Our insurance policies are underwritten by Tier 1 insurance
+                  providers with excellent ratings. We regularly review and
+                  update coverage to match platform growth. Full insurance
+                  policy details are available upon request to verified users.
+                </p>
+                <p>
+                  <strong>Important:</strong> Insurance protects against
+                  platform-level security failures, not individual user account
+                  security. Always practice good security hygiene with strong
+                  passwords and 2FA.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Support -->
+          <div class="faq-category" data-category="technical">
+            <h3 class="category-title">Technical Support</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>I'm having trouble logging in. What should I do?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If you're experiencing login issues, try these troubleshooting
+                  steps:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Clear Browser Cache:</strong> Clear your browser's
+                    cache and cookies, then try again
+                  </li>
+                  <li>
+                    <strong>Check Credentials:</strong> Ensure your email and
+                    password are correct (check for typos and Caps Lock)
+                  </li>
+                  <li>
+                    <strong>Reset Password:</strong> Use the "Forgot Password"
+                    link if you can't remember your password
+                  </li>
+                  <li>
+                    <strong>Check 2FA:</strong> Ensure your 2FA app is showing
+                    the current time-based code
+                  </li>
+                  <li>
+                    <strong>Try Different Browser:</strong> Test with Chrome,
+                    Firefox, Safari, or Edge
+                  </li>
+                  <li>
+                    <strong>Disable VPN:</strong> Temporarily disable VPN or
+                    proxy services
+                  </li>
+                  <li>
+                    <strong>Check Internet:</strong> Verify you have a stable
+                    internet connection
+                  </li>
+                  <li>
+                    <strong>Account Lockout:</strong> After 5 failed attempts,
+                    accounts are temporarily locked for 30 minutes
+                  </li>
+                </ol>
+                <p>
+                  If problems persist, contact support@nexusinvestmentfx.com
+                  with:
+                </p>
+                <ul>
+                  <li>Your registered email address</li>
+                  <li>Error messages you're receiving</li>
+                  <li>Browser and device information</li>
+                  <li>Screenshot of the issue (if possible)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>The platform is loading slowly. How can I fix this?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Slow loading can be caused by several factors. Try these
+                  solutions:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Check Internet Speed:</strong> Run a speed test at
+                    speedtest.net (minimum 5 Mbps recommended)
+                  </li>
+                  <li>
+                    <strong>Close Unnecessary Tabs:</strong> Too many open
+                    browser tabs can slow performance
+                  </li>
+                  <li>
+                    <strong>Update Browser:</strong> Ensure you're using the
+                    latest browser version
+                  </li>
+                  <li>
+                    <strong>Disable Extensions:</strong> Browser extensions can
+                    interfere with loading
+                  </li>
+                  <li>
+                    <strong>Clear Cache:</strong> Clear browser cache and
+                    temporary files
+                  </li>
+                  <li>
+                    <strong>Try Incognito Mode:</strong> Test if the issue
+                    persists in private/incognito browsing
+                  </li>
+                  <li>
+                    <strong>Check System Status:</strong> Visit
+                    status.nexusinvestmentfx.com for platform status updates
+                  </li>
+                  <li>
+                    <strong>Use Mobile App:</strong> Try our mobile app as an
+                    alternative
+                  </li>
+                </ul>
+                <h4>Recommended Browsers:</h4>
+                <ul>
+                  <li>Google Chrome (version 90+)</li>
+                  <li>Mozilla Firefox (version 88+)</li>
+                  <li>Safari (version 14+)</li>
+                  <li>Microsoft Edge (version 90+)</li>
+                </ul>
+                <p>
+                  If slowness persists across multiple devices and browsers, it
+                  may be a regional connectivity issue. Contact support with
+                  details about your location and ISP.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How do I report a bug or technical issue?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We appreciate bug reports! Here's how to report technical
+                  issues effectively:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Email Support:</strong> Send details to
+                    bugs@nexusinvestmentfx.com
+                  </li>
+                  <li>
+                    <strong>Use In-App Feedback:</strong> Dashboard > Help >
+                    Report an Issue
+                  </li>
+                  <li>
+                    <strong>Include These Details:</strong>
+                    <ul>
+                      <li>Clear description of the problem</li>
+                      <li>Steps to reproduce the issue</li>
+                      <li>Expected vs. actual behavior</li>
+                      <li>Browser and operating system</li>
+                      <li>Screenshots or screen recordings</li>
+                      <li>Date and time when issue occurred</li>
+                      <li>Any error messages received</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Priority Levels:</strong>
+                    <ul>
+                      <li>Critical: Cannot access account or funds at risk</li>
+                      <li>High: Core features not working</li>
+                      <li>Medium: Feature issues with workarounds available</li>
+                      <li>Low: Minor visual or cosmetic issues</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p>
+                  <strong>Bug Bounty Program:</strong> We offer rewards for
+                  security vulnerability reports. Critical bugs can earn up to
+                  $10,000. Contact security@nexusinvestmentfx.com for our
+                  responsible disclosure policy.
+                </p>
+                <p>Our technical team typically responds within:</p>
+                <ul>
+                  <li>Critical issues: Within 1 hour</li>
+                  <li>High priority: Within 4 hours</li>
+                  <li>Medium priority: Within 24 hours</li>
+                  <li>Low priority: Within 3 business days</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What are your platform's system requirements?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <h4>Web Platform Requirements:</h4>
+                <ul>
+                  <li>
+                    <strong>Operating System:</strong>
+                    <ul>
+                      <li>Windows 10 or later</li>
+                      <li>macOS 10.14 (Mojave) or later</li>
+                      <li>Linux (Ubuntu 18.04+, Fedora 30+)</li>
+                      <li>Chrome OS</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Browser:</strong>
+                    <ul>
+                      <li>Chrome 90+ (recommended)</li>
+                      <li>Firefox 88+</li>
+                      <li>Safari 14+</li>
+                      <li>Edge 90+</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Internet Speed:</strong> Minimum 5 Mbps (10+ Mbps
+                    recommended)
+                  </li>
+                  <li>
+                    <strong>Screen Resolution:</strong> Minimum 1024x768
+                    (1920x1080 recommended)
+                  </li>
+                  <li><strong>JavaScript:</strong> Must be enabled</li>
+                  <li><strong>Cookies:</strong> Must be enabled</li>
+                </ul>
+                <h4>Mobile App Requirements:</h4>
+                <ul>
+                  <li>
+                    <strong>iOS:</strong>
+                    <ul>
+                      <li>iOS 13.0 or later</li>
+                      <li>Compatible with iPhone 6S and newer</li>
+                      <li>iPad Air 2 and newer</li>
+                      <li>Requires 150 MB free storage</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Android:</strong>
+                    <ul>
+                      <li>Android 8.0 (Oreo) or later</li>
+                      <li>Minimum 2GB RAM</li>
+                      <li>Requires 120 MB free storage</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>
+                  <strong>Recommended Setup:</strong> For the best experience,
+                  use a modern laptop or desktop with a stable broadband
+                  connection. Mobile apps are excellent for on-the-go monitoring
+                  and trading.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you have a system status page?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Our real-time system status page is available at
+                  <strong>status.nexusinvestmentfx.com</strong>
+                </p>
+                <ul>
+                  <li>
+                    <strong>Real-Time Status:</strong> Live monitoring of all
+                    platform services
+                  </li>
+                  <li>
+                    <strong>Uptime Statistics:</strong> Historical uptime data
+                    and performance metrics
+                  </li>
+                  <li>
+                    <strong>Incident Reports:</strong> Details about ongoing or
+                    resolved issues
+                  </li>
+                  <li>
+                    <strong>Scheduled Maintenance:</strong> Advance notice of
+                    planned downtime
+                  </li>
+                  <li>
+                    <strong>Service Components:</strong>
+                    <ul>
+                      <li>Web Platform</li>
+                      <li>Mobile Apps (iOS & Android)</li>
+                      <li>API Services</li>
+                      <li>Deposit Processing</li>
+                      <li>Withdrawal Processing</li>
+                      <li>Email Notifications</li>
+                      <li>Customer Support</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Subscribe to Updates:</strong> Get notified via
+                    email or SMS about status changes
+                  </li>
+                  <li>
+                    <strong>99.9% Uptime SLA:</strong> We maintain
+                    industry-leading uptime standards
+                  </li>
+                </ul>
+                <p>
+                  You can also follow us on Twitter @NexusInvestFX for immediate
+                  updates during any service disruptions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Platform Features -->
+          <div class="faq-category" data-category="platform">
+            <h3 class="category-title">Platform Features</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I set up recurring investments?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX offers automated recurring investment
+                  plans:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Auto-Invest Feature:</strong> Set up automatic
+                    investments on a schedule
+                  </li>
+                  <li>
+                    <strong>Flexible Schedules:</strong>
+                    <ul>
+                      <li>Daily</li>
+                      <li>Weekly (choose specific day)</li>
+                      <li>Bi-weekly</li>
+                      <li>Monthly (choose specific date)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Dollar-Cost Averaging:</strong> Automatically reduce
+                    risk by investing regularly regardless of market conditions
+                  </li>
+                  <li>
+                    <strong>Minimum Amount:</strong> $3,500 per recurring
+                    investment
+                  </li>
+                  <li>
+                    <strong>Source Funds:</strong> Deducted from your account
+                    balance automatically
+                  </li>
+                  <li>
+                    <strong>Notifications:</strong> Receive confirmation email
+                    for each automatic investment
+                  </li>
+                  <li>
+                    <strong>Pause or Cancel:</strong> Modify or stop recurring
+                    investments anytime without penalties
+                  </li>
+                </ul>
+                <p>
+                  To set up: Dashboard > Investments > Recurring Investments >
+                  Create New Schedule
+                </p>
+                <p>
+                  Ensure you maintain sufficient balance for scheduled
+                  investments. If insufficient funds are available, the
+                  investment will be skipped and you'll receive a notification.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Does Nexus Investment FX offer an API for developers?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! We provide a comprehensive REST API for programmatic
+                  access:
+                </p>
+                <ul>
+                  <li>
+                    <strong>API Documentation:</strong> Available at
+                    api.nexusinvestmentfx.com/docs
+                  </li>
+                  <li>
+                    <strong>Available Endpoints:</strong>
+                    <ul>
+                      <li>Account information and balance queries</li>
+                      <li>Investment history and active positions</li>
+                      <li>Deposit and withdrawal management</li>
+                      <li>Market data and cryptocurrency prices</li>
+                      <li>Transaction history</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Authentication:</strong> API keys with read-only or
+                    full-access permissions
+                  </li>
+                  <li>
+                    <strong>Rate Limits:</strong>
+                    <ul>
+                      <li>Standard users: 60 requests/minute</li>
+                      <li>VIP users: 300 requests/minute</li>
+                      <li>Institutional: Custom limits available</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>WebSocket Support:</strong> Real-time data streaming
+                    for market prices and account updates
+                  </li>
+                  <li>
+                    <strong>SDKs Available:</strong> Python, JavaScript/Node.js,
+                    PHP, Java
+                  </li>
+                  <li>
+                    <strong>Sandbox Environment:</strong> Test API calls without
+                    affecting real account
+                  </li>
+                </ul>
+                <p>
+                  To generate API keys: Dashboard > Settings > API Management >
+                  Create New API Key
+                </p>
+                <p>
+                  <strong>Security Note:</strong> Never share your API keys. Use
+                  IP whitelisting and set appropriate permissions (read-only
+                  recommended for most use cases).
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I export my transaction history?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX provides comprehensive transaction
+                  export capabilities:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Export Formats:</strong>
+                    <ul>
+                      <li>CSV (Excel-compatible)</li>
+                      <li>PDF (formatted reports)</li>
+                      <li>JSON (for developers)</li>
+                      <li>Excel (.xlsx)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Time Ranges:</strong>
+                    <ul>
+                      <li>Last 7 days</li>
+                      <li>Last 30 days</li>
+                      <li>Last 90 days</li>
+                      <li>Year-to-date</li>
+                      <li>Custom date range</li>
+                      <li>All time (complete history)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Transaction Types:</strong>
+                    <ul>
+                      <li>Deposits</li>
+                      <li>Withdrawals</li>
+                      <li>Investments</li>
+                      <li>Profits</li>
+                      <li>Fees</li>
+                      <li>Internal transfers</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Included Information:</strong> Date, time,
+                    transaction type, cryptocurrency, amount, USD value, status,
+                    transaction ID
+                  </li>
+                  <li>
+                    <strong>Tax Reports:</strong> Annual tax summary reports
+                    generated automatically each year
+                  </li>
+                </ul>
+                <p>
+                  To export: Dashboard > Transactions > Export > Select format
+                  and date range > Download
+                </p>
+                <p>
+                  VIP members have access to advanced reporting with custom
+                  filters and scheduled automatic exports.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is there a referral program?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Earn rewards by referring friends and family to Nexus
+                  Investment FX:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Commission Structure:</strong>
+                    <ul>
+                      <li>
+                        5% commission on all referred user investments
+                        (lifetime)
+                      </li>
+                      <li>
+                        2% second-tier commission (referrals of your referrals)
+                      </li>
+                      <li>Unlimited earning potential</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>How It Works:</strong>
+                    <ol>
+                      <li>
+                        Get your unique referral link from Dashboard > Referrals
+                      </li>
+                      <li>
+                        Share your link via email, social media, or website
+                      </li>
+                      <li>
+                        Earn commission when referred users make investments
+                      </li>
+                      <li>Commission credited to your account in real-time</li>
+                    </ol>
+                  </li>
+                  <li>
+                    <strong>Bonus Rewards:</strong>
+                    <ul>
+                      <li>
+                        $50 bonus when your referral makes first $500 investment
+                      </li>
+                      <li>$200 bonus at 10 active referrals</li>
+                      <li>$1,000 bonus at 50 active referrals</li>
+                      <li>Custom rewards for top affiliates</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Marketing Materials:</strong> Access banners,
+                    landing pages, and promotional content
+                  </li>
+                  <li>
+                    <strong>Real-Time Dashboard:</strong> Track referrals,
+                    clicks, conversions, and earnings
+                  </li>
+                  <li>
+                    <strong>Withdraw Anytime:</strong> Referral earnings can be
+                    withdrawn with no minimums
+                  </li>
+                </ul>
+                <p>
+                  <strong>Affiliate Program:</strong> For professional marketers
+                  and influencers, we offer a premium affiliate program with
+                  higher commissions, dedicated support, and advanced tracking.
+                  Contact affiliates@nexusinvestmentfx.com
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span
+                  >Do you offer customer support in multiple languages?</span
+                >
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Nexus Investment FX provides multilingual support to
+                  serve our global community:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Supported Languages:</strong>
+                    <ul>
+                      <li>English (24/7 full support)</li>
+                      <li>Spanish / Español</li>
+                      <li>French / Français</li>
+                      <li>German / Deutsch</li>
+                      <li>Portuguese / Português</li>
+                      <li>Chinese (Simplified & Traditional) / 中文</li>
+                      <li>Japanese / 日本語</li>
+                      <li>Korean / 한국어</li>
+                      <li>Russian / Русский</li>
+                      <li>Arabic / العربية</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Platform Translation:</strong> Full website and app
+                    available in all supported languages
+                  </li>
+                  <li>
+                    <strong>Support Channels:</strong>
+                    <ul>
+                      <li>Live Chat (24/7 with translation)</li>
+                      <li>Email support in your preferred language</li>
+                      <li>Phone support (limited languages, business hours)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Change Language:</strong> Dashboard > Settings >
+                    Language Preferences
+                  </li>
+                  <li>
+                    <strong>Regional Teams:</strong> Dedicated support teams for
+                    major regions (Americas, Europe, Asia-Pacific)
+                  </li>
+                </ul>
+                <p>
+                  Note: Response times may vary for non-English support during
+                  peak hours. English support is always available 24/7 with the
+                  fastest response times.
+                </p>
+                <p>
+                  We're continuously expanding language support. If your
+                  language isn't listed, contact us - we may add it based on
+                  user demand.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I set up price alerts for cryptocurrencies?</span>
+                <svg
+                  class="faq-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! Set custom price alerts to stay informed about market
+                  movements:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Alert Types:</strong>
+                    <ul>
+                      <li>
+                        Price reaches specific value (e.g., BTC hits $50,000)
+                      </li>
+                      <li>Price increases by percentage (e.g., ETH up 10%)</li>
+                      <li>Price decreases by percentage (e.g., down 5%)</li>
+                      <li>Price crosses moving average</li>
+                      <li>24-hour volume alerts</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Notification Methods:</strong>
+                    <ul>
+                      <li>Push notifications (mobile app)</li>
+                      <li>Email alerts</li>
+                      <li>SMS (VIP members only)</li>
+                      <li>In-platform notifications</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Supported Cryptocurrencies:</strong> All major
+                    cryptocurrencies including BTC, ETH, USDT, USDC, LTC, XRP,
+                    and 50+ others
+                  </li>
+                  <li>
+                    <strong>Alert Limits:</strong>
+                    <ul>
+                      <li>Standard users: 10 active alerts</li>
+                      <li>VIP users: Unlimited alerts</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>How to Set:</strong> Dashboard > Market > Select
+                    cryptocurrency > Set Alert > Configure conditions and
+                    notification method
+                  </li>
+                </ul>
+                <p>
+                  Price alerts help you make informed investment decisions and
+                  never miss important market movements. Alerts are checked
+                  every 60 seconds for accuracy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Still Have Questions Section -->
+          <div class="faq-contact-section">
+            <div class="faq-contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"
+                  />
+                </svg>
+              </div>
+              <h3>Still Have Questions?</h3>
+              <p>
+                Can't find the answer you're looking for? Our support team is
+                here to help you 24/7.
+              </p>
+              <div class="contact-buttons">
+                <a href="contact.html" class="btn-primary">Contact Support</a>
+                <a
+                  href="mailto:support@nexusinvestmentfx.com"
+                  class="btn-secondary"
+                  >Email Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section footer-company">
+          <div class="footer-logo">
+            <img
+              src="asset/home/footer2-img.png"
+              alt="Nexus Investment FX Logo"
+            />
+          </div>
+          <p>
+            Your trusted partner in crypto investment and digital wealth growth.
+            Secure, transparent, and profitable trading solutions.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/company/nexus-investfx"
+              class="social-icon"
+              title="LinkedIn"
+              target="_blank"
+            >
+              <img src="asset/home/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="https://nexusinvestmentfx.com">Home</a></li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/about.html">About Us</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/services.html">Services</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Investment Plans</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Investment Info -->
+        <div class="footer-section footer-investment">
+          <h4>Investment Plans</h4>
+          <ul>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Ultra Deluxe Plan</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Premium Plan</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Gold Plan</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Ultimate Plan</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >Platinum Plan</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/#investment-plans"
+                >VIP Plan</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Support & Legal -->
+        <div class="footer-section footer-support">
+          <h4>Support & Legal</h4>
+          <ul>
+            <li>
+              <a href="https://nexusinvestmentfx.com/faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/terms-of-service.html"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://nexusinvestmentfx.com/terms-of-service.html#risks"
+                >Risk Disclosure</a
+              >
+            </li>
+            <li>
+              <a href="https://nexusinvestmentfx.com/contact.html"
+                >Support Center</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section footer-contact">
+          <h4>Get In Touch</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <a href="mailto:support@nexusinvestmentfx.com"
+                >support@nexusinvestmentfx.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+13155105843">+1 (315) 510-5843</a>
+            </li>
+            <li class="contact-item">Towers Cres Plaza, Tysons, VA 22102</li>
+            <li class="contact-item">24/7 Customer Support</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>
+            &copy; 2026 Nexus Investment FX. All rights reserved. | Secure •
+            Transparent • Profitable
+          </p>
+          <div class="footer-badges">
+            <span class="badge">SSL Secured</span>
+            <span class="badge">Licensed</span>
+            <span class="badge">Verified</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/695341e602aabd198059fb6e/1jdmjis58";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
