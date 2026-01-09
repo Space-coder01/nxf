@@ -1793,6 +1793,11 @@ footer {
   color: #b3d9ff;
 }
 
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-item strong {
   color: #fabc2e;
   font-weight: 600;
